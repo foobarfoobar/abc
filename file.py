@@ -1,19 +1,35 @@
 ## new file
 
 class Good(Object):
-	pass
+	def __init__(self,name):
+		self.name = name
 
 class FactoryProto(Object):
-	pass
+	def __init__(self,name,inputList,product):
+		self.name = name
+		self.inputGood = inputList
+		self.outputGood = product
+		self.size = 1000
 
 class PopProto(Object):
-	pass
+	def __init__(self,name,need):
+		self.name = name
+		self.need = need
 
 class Factory(Object):
-    pass
+	def __init__(self,proto):
+		self.proto = proto
+		self.employment = []
 
 class Pop(Object):
-	pass
+	def __init__(self,proto):
+		self.proto = proto
 
 class WorldMarket(Object):
+	pass
+
+class LabourMarket(Object):
+	pass
+
+class World(Object):
 	pass
